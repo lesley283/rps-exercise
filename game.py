@@ -13,11 +13,18 @@
 user_choice = input("Please select your choice: 'rock', 'paper', or 'scissors': ")
 
 # test
-print("Your choice:", user_choice)
-print(type(user_choice))
+# print(type(user_choice))
 
 # VALIDATIONS
 
+# convert user input into all lowercase
+user_choice = user_choice.lower()
+
+if user_choice == "rock" or user_choice == "paper" or user_choice == "scissors":
+    print("Your choice:", user_choice)
+else:
+    print("You entered an invalid choice. The program will now terminate.")
+    exit()
 
 
 # COMPUTER CHOICE
