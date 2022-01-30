@@ -7,9 +7,16 @@
 #
 
 
+# WELCOME MESSAGE
+dashes = ('-' * 25) # used to format a dashed line
+print(dashes)
+
+# display welcome message
+print("Welcome Player One to my Rock-Paper-Scissors game!")
+print(dashes)
 
 
-# ASK FOR USER INPUT
+# ASK FOR USER INPUTsci
 user_choice = input("Please select your choice: 'rock', 'paper', or 'scissors': ")
 
 
@@ -35,6 +42,7 @@ computer_choice = random.choice(possible_choices)
 
 # print computer choice
 print("Computer choice:", computer_choice)
+print(dashes)  # used solely for formatting
 
 
 # DETERMINE THE WINNER
@@ -58,12 +66,18 @@ elif user_choice == "scissors":
     elif computer_choice == "paper":
         winner = "user"
 
-# test
-print(winner)
-
 
 # FINAL RESULTS
+if winner == "computer":
+    print("The computer won... :[ Nice try!")
+elif winner == "user":
+    print("You won! Good job! :]")
+else:
+    print("You tied! Play again!")
 
+# display farewell message
+print(dashes) # used solely for formatting
+print("Thanks for playing my game! Please play again soon.")
 
 # BONUS:
 # PLAYER NAME
