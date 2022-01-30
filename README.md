@@ -1,6 +1,5 @@
 # rps-starter
 
-A Starter Repository for the [Rock Paper Scissors Exercise](https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md).
 
 ## Setup
 
@@ -28,6 +27,12 @@ Run the rock paper scissors game:
 
 ```sh
 python game.py
+```
+
+Set the player name through an environment variable:
+
+```sh
+PLAYER_NAME="John Doe" python game.py
 ```
 
 ## Testing
