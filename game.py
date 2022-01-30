@@ -82,9 +82,9 @@ if __name__ == "__main__":
     if winning_choice == None: # the players chose the same choice
         print("You tied! Try again!")
     elif user_choice == winning_choice: # the user is the winner
-        print("You won! Good job :]")
+        print("You won! Good job :)")
     elif computer_choice == winning_choice: # the computer is the winner
-        print("The computer won... :[ Nice try!")
+        print("The computer won... Nice try!")
 
     # FAREWELL MESSAGE
     print(dashes) # used solely for formatting
