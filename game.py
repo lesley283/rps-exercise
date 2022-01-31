@@ -62,6 +62,10 @@ if __name__ == "__main__":
     possible_choices = ["rock", "paper", "scissors"]
 
     # simulate computer selection using the random module
+    # https://docs.python.org/3/library/random.html#random.choice
+    # https://www.geeksforgeeks.org/python-select-random-value-from-a-list/
+    # https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/modules/random.md
+
     import random # load the module
     computer_choice = random.choice(possible_choices)
 
