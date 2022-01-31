@@ -65,9 +65,8 @@ if __name__ == "__main__":
     # https://docs.python.org/3/library/random.html#random.choice
     # https://www.geeksforgeeks.org/python-select-random-value-from-a-list/
     # https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/modules/random.md
-
-    import random # load the module
-    computer_choice = random.choice(possible_choices)
+    from random import choice  # import choice function from the random module
+    computer_choice = choice(possible_choices)
 
     # print computer choice
     print("Computer choice:", computer_choice)
