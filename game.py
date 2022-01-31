@@ -7,7 +7,7 @@
 
 # USER-DEFINED FUNCTIONS
 # the 'determine_winner' function determines the winning choice between two valid choices
-# returns the winning choice (e.g. "paper"), or "none" if there is a tie
+# returns the winning choice (e.g. "paper"), or None if there is a tie
 def determine_winner(user_choice, computer_choice):
 
     if user_choice == computer_choice:
@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     # BONUS - ENVIRONMENT VARIABLE
     import os
-    player_name = os.getenv("PLAYER_NAME", default = "Player One")
+    player_name = os.getenv("PLAYER_NAME", default="Player One")
 
 
     # WELCOME MESSAGE
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     print(dashes)
 
 
-    # ASK FOR USER INPUTsci
+    # ASK FOR USER INPUT
     user_choice = input("Please select your choice: 'rock', 'paper', or 'scissors': ")
 
 
@@ -57,12 +57,12 @@ if __name__ == "__main__":
         exit()
 
 
-    # COMPUTER CHOICE
+    # GENERATE COMPUTER CHOICE
     # store possible choices into a list
     possible_choices = ["rock", "paper", "scissors"]
 
     # simulate computer selection using the random module
-    import random # loads the module
+    import random # load the module
     computer_choice = random.choice(possible_choices)
 
     # print computer choice
