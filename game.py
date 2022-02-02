@@ -6,9 +6,14 @@
 
 
 # USER-DEFINED FUNCTIONS
-# the 'determine_winner' function determines the winning choice between two valid choices
-# returns the winning choice (e.g. "paper"), or None if there is a tie
 def determine_winner(user_choice, computer_choice):
+    """
+    Determines the winning choice between two valid choices from selectable options: "rock", "paper", or "scissors".
+
+    Returns the winning choice (e.g. "paper"), or None if there is a tie.
+
+    Example: determine_winner("rock", "paper")
+    """
 
     if user_choice == computer_choice:
         winning_choice = None  # neither player won
