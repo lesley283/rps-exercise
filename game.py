@@ -32,7 +32,8 @@ def determine_winner(user_choice, computer_choice):
 # START OF MAIN
 if __name__ == "__main__":
 
-    # BONUS - ENVIRONMENT VARIABLE
+    # ENVIRONMENT VARIABLE
+    # allows user to pass in a player name
     import os
     player_name = os.getenv("PLAYER_NAME", default="Player One")
 
